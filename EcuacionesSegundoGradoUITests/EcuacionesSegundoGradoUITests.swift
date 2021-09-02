@@ -6,6 +6,7 @@
 //
 
 import XCTest
+@testable import EcuacionesSegundoGrado
 
 class EcuacionesSegundoGradoUITests: XCTestCase {
 
@@ -22,21 +23,30 @@ class EcuacionesSegundoGradoUITests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() throws {
+    
+    func testInvalidCoefA() throws {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        
+        let txtCoefA = app.textFields["coefATextField"]
+        txtCoefA.tap()
+        txtCoefA.typeText("0")
+        let txtCoefB = app.textFields["coefBTextField"]
+        txtCoefB.tap()
+        txtCoefB.typeText("1")
+        let txtCoefC = app.textFields["coefCTextField"]
+        txtCoefC.tap()
+        txtCoefC.typeText("1")
+        let txtRaizUno = app.textFields["raizUnoTextField"]
+        let txtRaizDos = app.textFields["raizDosTextField"]
+        app.staticTexts["a:"].tap()
+        app.staticTexts["Resolver"].tap()
+        
+        XCTAssertEqual(txtRaizUno.value as! String, "")
+        XCTAssertEqual(txtRaizDos.value as! String, "")
+            
+        
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
 }

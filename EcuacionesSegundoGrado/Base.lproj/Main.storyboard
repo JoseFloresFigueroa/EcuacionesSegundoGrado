@@ -30,6 +30,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gc2-nH-wJG" userLabel="Coef a">
                                                 <rect key="frame" x="70" y="-6.5" width="262" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="coefATextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -89,6 +90,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bzs-Y0-Yzc" userLabel="Coef b">
                                                 <rect key="frame" x="70" y="-6.5" width="262" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="coefBTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -113,6 +115,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w44-4f-wlN" userLabel="Coef c">
                                                 <rect key="frame" x="70" y="-7" width="262" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="coefCTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -156,6 +159,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ev0-Qf-ej9" userLabel="RaizUno">
                                                 <rect key="frame" x="105" y="-6.5" width="227" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="raizUnoTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -180,6 +184,7 @@
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8NT-Nc-COK" userLabel="RaizDos">
                                                 <rect key="frame" x="105" y="-7" width="227" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="raizDosTextField"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>

@@ -41,7 +41,7 @@ class ViewController: UIViewController {
         if let aValue = txtCoefA.text{
             if let bValue = txtCoefB.text{
                 if let cValue = txtCoefC.text{
-                    if !aValue.isEmpty && Float(aValue) != 0 && !bValue.isEmpty && !aValue.isEmpty{
+                    if !aValue.isEmpty && Float(aValue) != 0 && !bValue.isEmpty && !cValue.isEmpty{
                         let raizValue = resolverEcuacion.resolver(ecuacion: Ecuacion(a: Float(aValue)!, b: Float(bValue)!, c: Float(cValue)!, r1: "", r2: ""))
                         txtRaizUno.text = String(raizValue.raizUno)
                         txtRaizDos.text = String(raizValue.raizDos)
@@ -57,7 +57,6 @@ class ViewController: UIViewController {
         let alertController = UIAlertController(title: "Aviso", message:
             "No es una ecuacion de segundo grado", preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Aceptar", style: .default))
-
         self.present(alertController, animated: true, completion: nil)
     }
 }
